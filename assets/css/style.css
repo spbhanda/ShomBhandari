@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Header------------------------- */
+header {
+	height: 90px;
+	background-color: black;
+	display: flex;
+	flex-direction: wrap;
+	justify-content: space-between;
+	align-items: center;
+	top: 0;
+	bottom: 0;
+}
+
+header h1 {
+background-color: darkseagreen;
+font-size: 50px;
+color: black;
+padding: 0 10px 0 75px;
+}
+
+header nav ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+header nav ul li a {
+	/* list-style: none; */
+	color: darkseagreen;
+	font-weight: bold;
+	font-size: larger;
+	padding: 10px 15px;
+}
+
+/* Hero Container------------------------------------- */
+.hero {
+	height: 265px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-image: url('../images/hero_background_image3.JPG');
+	background-size: cover;
+	background-blend-mode: soft-light;
+	position: relative;
+}
+
+.hero h2 {
+	font-size: 35px;
+	padding: 10px;
+	position: absolute;
+	background-color: darkseagreen;
+	right: 75px;
+	bottom: 10px;
+}
+
+/* Main container------------------------------------- */
+.bodyPage > h2 {
+	font-size: 50px;
+	color:rgb(69, 90, 122)
+	
+}
+
+
+
+
+
+
+
+
+
+
