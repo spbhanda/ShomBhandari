@@ -61,14 +61,41 @@ header nav ul li a {
 	background-color: darkseagreen;
 	right: 75px;
 	bottom: 10px;
-}
+	}
 
 /* Main container------------------------------------- */
-.bodyPage > h2 {
+.section-title {
+	border-right: 5px solid gray;
 	font-size: 50px;
-	color:rgb(69, 90, 122)
-	
+	color: rgb(69, 90, 122);
+	text-align: right;
+	padding-right: 25px;
+	width: auto;
+	}
+
+/* Work section--------------------------------------- */
+#aboutMe {
+	margin-bottom: 25px;
+	margin-top: 25px;
+	display: flex;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+	align-items: center;
 }
+
+#aboutMe div {
+	padding-left: 25px;
+}
+
+/* Work section---------------------------------------- */
+#work {
+	margin-top: 25px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
 
 
 
