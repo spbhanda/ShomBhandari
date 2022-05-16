@@ -48,7 +48,7 @@ header nav ul li a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-image: url('../images/hero_background_image3.JPG');
+	background-image: url('../images/hero_background_image.JPG');
 	background-size: cover;
 	background-blend-mode: soft-light;
 	position: relative;
@@ -63,14 +63,28 @@ header nav ul li a {
 	bottom: 10px;
 	}
 
+	.myPhoto {
+		flex: 1 12%;
+	}
+
+	.myPhoto img {
+		position: absolute;
+		right: 75px;
+		bottom: 10px;
+		max-width: 100;
+		}
+
 /* Main container------------------------------------- */
+.bodyPage {
+	margin: 25px 50px;
+}
 .section-title {
 	border-right: 5px solid gray;
 	font-size: 50px;
 	color: rgb(69, 90, 122);
 	text-align: right;
 	padding-right: 25px;
-	width: auto;
+	width: 200px;
 	}
 
 /* Work section--------------------------------------- */
@@ -88,10 +102,106 @@ header nav ul li a {
 }
 
 /* Work section---------------------------------------- */
-#work {
-	margin-top: 25px;
+#works {
+	margin: 25px 0;
 	display: flex;
+}
+
+.work-item {
+	text-decoration: none;
+	position: absolute;
+	background-color: darkseagreen;
+	bottom: 2%;
+	right: 2%;
+	color:darkcyan;
+	border-radius: 10%;
+	padding: 1%;
+}
+
+.work-container {
+	display: flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	}
+
+.fan-page {
+	background-image: url('../images/fanPage.jfif');
+ background-blend-mode: soft-light;
+	background-size: cover;
+	width: 100%;
+	height: 300px;
+	margin: 0 0 15px 4%;
+	border: 5px solid darkseagreen;
+	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+}
+
+.runBuddy {
+	background-color: dimgray;
+ width: 47%;
+	height: 150px;
+	margin-bottom: 15px;
+	margin-left: 4%;
+	border: 5px solid darkseagreen;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.calculator {
+	background-color: brown;
+	width: 47%;
+	height: 150px;
+	margin-bottom: 15px;
+	border: 5px solid darkseagreen;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.puzzle {
+	background-color: aqua;
+	width: 47%;
+	height: 150px;
+	margin-left: 4%;
+	border: 5px solid darkseagreen;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.under-construction {
+	background-color: skyblue;
+	width: 47%;
+	height: 150px;
+	border: 5px solid darkseagreen;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+
+
+
+/* Contact section---------------------------------------- */
+#contact {
+	background-color: rgb(212, 201, 212);
+	width: 100%;
+	height: 400px;
+	padding: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	position: relative;
 }
 
 
