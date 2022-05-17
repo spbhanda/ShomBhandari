@@ -8,6 +8,10 @@ body {
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.about-section, .work-section, .contact-info {
+	margin: 5% 0;
+}
+
 /* Header------------------------- */
 header {
 	height: 90px;
@@ -38,13 +42,14 @@ header nav ul li a {
 	/* list-style: none; */
 	color: darkseagreen;
 	font-weight: bold;
-	font-size: larger;
+	font-size: 20px;
 	padding: 10px 15px;
 }
 
 /* Hero Container------------------------------------- */
 .hero {
 	height: 265px;
+	/* margin-bottom: 0%; */
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -62,48 +67,49 @@ header nav ul li a {
 	right: 75px;
 	bottom: 10px;
 	}
-
-	.myPhoto {
-		flex: 1 12%;
-	}
-
 	.myPhoto img {
+		height: 100%;
+		width: 225px;
+		background-blend-mode: soft-light;
 		position: absolute;
-		right: 75px;
-		bottom: 10px;
-		max-width: 100;
-		}
+		left: 0;
+	}
 
 /* Main container------------------------------------- */
 .bodyPage {
-	margin: 25px 50px;
+	margin: 0 0 15% 0;
 }
+
 .section-title {
+	width: 20%;
 	border-right: 5px solid gray;
 	font-size: 50px;
 	color: rgb(69, 90, 122);
 	text-align: right;
-	padding-right: 25px;
-	width: 200px;
+	padding-left: 3%;
+	padding-right: 2%;
+	flex: 0 0 20%;
+	overflow: auto;
 	}
 
-/* Work section--------------------------------------- */
-#aboutMe {
-	margin-bottom: 25px;
-	margin-top: 25px;
+
+/* About me section--------------------------------------- */
+.about-section {
+	height: 100px;
+	align-content: center;	
 	display: flex;
 	flex-wrap:nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
-#aboutMe div {
-	padding-left: 25px;
+.about-section div p {
+	margin: 0 5%;
 }
 
 /* Work section---------------------------------------- */
-#works {
-	margin: 25px 0;
+.work-section {
+	margin-right: 0%;
 	display: flex;
 }
 
@@ -114,16 +120,16 @@ header nav ul li a {
 	bottom: 2%;
 	right: 2%;
 	color:darkcyan;
-	border-radius: 10%;
 	padding: 1%;
 }
 
 .work-container {
+	width: 100%;
 	display: flex;
 	flex-wrap:wrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
+	margin-right: 5%;
 	}
 
 .fan-page {
@@ -142,7 +148,8 @@ header nav ul li a {
 }
 
 .runBuddy {
-	background-color: dimgray;
+	background-image: url('../images/02-run-buddy.jpg');
+	background-size: cover;
  width: 47%;
 	height: 150px;
 	margin-bottom: 15px;
@@ -155,7 +162,8 @@ header nav ul li a {
 }
 
 .calculator {
-	background-color: brown;
+	background-image: url('../images/calculator.jpg');
+	background-size: cover;
 	width: 47%;
 	height: 150px;
 	margin-bottom: 15px;
@@ -167,7 +175,8 @@ header nav ul li a {
 }
 
 .puzzle {
-	background-color: aqua;
+	background-image: url('../images/puzzle.jpg');
+	background-size: cover;
 	width: 47%;
 	height: 150px;
 	margin-left: 4%;
@@ -190,19 +199,31 @@ header nav ul li a {
 }
 
 
-
-
 /* Contact section---------------------------------------- */
-#contact {
-	background-color: rgb(212, 201, 212);
-	width: 100%;
-	height: 400px;
-	padding: 25px;
+
+.contact-info div address a {
+	font-size: 20px;
+	font-style: normal;
+	color: rgb(69, 90, 122);
+		margin: 0 45px;
+	}
+
+.contact-info {
 	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	position: relative;
+	align-items: center;
+	overflow: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
