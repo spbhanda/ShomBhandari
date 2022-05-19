@@ -1,3 +1,8 @@
+:root {
+	--primary: darkseagreen;
+	--secondary: rgb(69, 90, 122);
+	}
+
 * {
 	box-sizing: border-box;
 	margin:0;
@@ -25,7 +30,7 @@ header {
 }
 
 header h1 {
-background-color: darkseagreen;
+background-color: var(--primary);
 font-size: 50px;
 color: black;
 padding: 0 10px 0 10px;
@@ -40,7 +45,7 @@ header nav ul {
 }
 
 header nav ul li a {
-	color: darkseagreen;
+	color: var(--primary);
 	font-weight: bold;
 	font-size: 20px;
 	padding: 10px 15px;
@@ -69,7 +74,7 @@ header nav ul li a:hover {
 	font-size: 25px;
 	padding: 10px;
 	position: absolute;
-	background-color: darkseagreen;
+	background-color: var(--primary);
 	right: 20px;
 	bottom: 10px;
 	}
@@ -91,7 +96,7 @@ header nav ul li a:hover {
 	width: 20%;
 	border-right: 5px solid gray;
 	font-size: 50px;
-	color: rgb(69, 90, 122);
+	color: var(--secondary);
 	text-align: right;
 	padding-left: 3%;
 	padding-right: 2%;
@@ -123,7 +128,7 @@ header nav ul li a:hover {
 .work-item {
 	text-decoration: none;
 	position: absolute;
-	background-color: darkseagreen;
+	background-color: var(--primary);
 	bottom: 2%;
 	right: 2%;
 	color:darkcyan;
@@ -146,7 +151,7 @@ header nav ul li a:hover {
 	width: 100%;
 	height: 300px;
 	margin: 0 0 15px 4%;
-	border: 5px solid darkseagreen;
+	border: 5px solid var(--primary);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -166,7 +171,7 @@ header nav ul li a:hover {
 	height: 150px;
 	margin-bottom: 15px;
 	margin-left: 4%;
-	border: 5px solid darkseagreen;
+	border: 5px solid var(--primary);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -184,7 +189,7 @@ header nav ul li a:hover {
 	width: 47%;
 	height: 150px;
 	margin-bottom: 15px;
-	border: 5px solid darkseagreen;
+	border: 5px solid var(--primary);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -202,7 +207,7 @@ header nav ul li a:hover {
 	width: 47%;
 	height: 150px;
 	margin-left: 4%;
-	border: 5px solid darkseagreen;
+	border: 5px solid var(--primary);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -218,7 +223,7 @@ header nav ul li a:hover {
 	background-color: skyblue;
 	width: 47%;
 	height: 150px;
-	border: 5px solid darkseagreen;
+	border: 5px solid var(--primary);
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -234,7 +239,7 @@ header nav ul li a:hover {
 .contact-info div address a {
 	font-size: 20px;
 	font-style: normal;
-	color: rgb(69, 90, 122);
+	color: var(--secondary);
 		margin: 0 45px;
 	}
 
@@ -261,7 +266,7 @@ header nav ul li a:hover {
 	}
 
 	header h1 {
-		background-color: darkseagreen;
+		background-color: var(--primary);
 		font-size: 35px;
 		color: black;
 		padding: 0 10px 0 10px;
@@ -285,7 +290,7 @@ header nav ul li a:hover {
 	.contact-info div address a {
 		font-size: 20px;
 		font-style: normal;
-		color: rgb(69, 90, 122);
+		color: var(--secondary);
 			margin: 0 10px 10px 10px;
 		}
 	}
@@ -300,14 +305,14 @@ header nav ul li a:hover {
 
 	header h1 {
 		font-size: 30px;
-		color: darkseagreen;
+		color: var(--primary);
 	 margin: 10px 0;
 		background-color: transparent;
 		
 	}
 
 	header nav ul {
-		color: darkseagreen;
+		color: var(--primary);
 		font-weight: bold;
 		margin-bottom: 10px;
 		justify-content: space-between;
