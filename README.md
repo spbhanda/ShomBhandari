@@ -20,3 +20,9 @@ And lastly there is a footer section that has the list of contacts.
 Webpage Link:
 -------------
 https://spbhanda.github.io/ShomBhandari/
+
+
+Webpage Snapshot:
+-----------------
+
+![](https://github.com/spbhanda/ShomBhandari/blob/main/assets/images/Webside%20Image.JPG)
