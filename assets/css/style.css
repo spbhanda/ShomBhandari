@@ -73,12 +73,13 @@ header nav ul li a:hover {
 	right: 20px;
 	bottom: 10px;
 	}
+
 	.myPhoto img {
 		height: 100%;
-		width: 225px;
+		width: 300px;
 		background-blend-mode: soft-light;
 		position: absolute;
-		display: center;
+		left: 0;
 	}
 
 /* Main container----------------------------------- */
