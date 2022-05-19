@@ -28,7 +28,8 @@ header h1 {
 background-color: darkseagreen;
 font-size: 50px;
 color: black;
-padding: 0 10px 0 75px;
+padding: 0 10px 0 10px;
+margin-left: 10px;
 }
 
 header nav ul {
@@ -39,11 +40,16 @@ header nav ul {
 }
 
 header nav ul li a {
-	/* list-style: none; */
 	color: darkseagreen;
 	font-weight: bold;
 	font-size: 20px;
 	padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+	color: black;
+	background-color: orange;
+	border-radius: 5%;
 }
 
 /* Hero Container------------------------------------- */
@@ -53,18 +59,18 @@ header nav ul li a {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-image: url('../images/hero_background_image.JPG');
+	background-image: url('../images/Hero_banner2.jpg');
 	background-size: cover;
 	background-blend-mode: soft-light;
 	position: relative;
 }
 
 .hero h2 {
-	font-size: 35px;
+	font-size: 25px;
 	padding: 10px;
 	position: absolute;
 	background-color: darkseagreen;
-	right: 75px;
+	right: 20px;
 	bottom: 10px;
 	}
 	.myPhoto img {
@@ -72,7 +78,7 @@ header nav ul li a {
 		width: 225px;
 		background-blend-mode: soft-light;
 		position: absolute;
-		left: 0;
+		display: center;
 	}
 
 /* Main container------------------------------------- */
@@ -133,7 +139,7 @@ header nav ul li a {
 	}
 
 .fan-page {
-	background-image: url('../images/fanPage.jfif');
+		background-image: url('../images/fanPage.jfif');
  background-blend-mode: soft-light;
 	background-size: cover;
 	width: 100%;
@@ -145,6 +151,11 @@ header nav ul li a {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	position: relative;
+}
+
+.fan-page:hover {
+ height: 400px;
+	border-color: orange;
 }
 
 .runBuddy {
@@ -161,6 +172,11 @@ header nav ul li a {
 	position: relative;
 }
 
+.runBuddy:hover {
+	height: 200px;
+	border-color: orange;
+}
+
 .calculator {
 	background-image: url('../images/calculator.jpg');
 	background-size: cover;
@@ -172,6 +188,11 @@ header nav ul li a {
 	flex-direction: row;
 	flex-wrap: wrap;
 	position: relative;
+}
+
+.calculator:hover {
+ height: 200px;
+	border-color: orange;
 }
 
 .puzzle {
@@ -187,6 +208,11 @@ header nav ul li a {
 	position: relative;
 }
 
+.puzzle:hover {
+	height: 200px;
+	border-color: orange;
+}
+
 .under-construction {
 	background-color: skyblue;
 	width: 47%;
@@ -197,7 +223,10 @@ header nav ul li a {
 	flex-wrap: wrap;
 	position: relative;
 }
-
+.under-construction:hover {
+ height: 200px;
+	border-color: orange;
+}
 
 /* Contact section---------------------------------------- */
 
@@ -208,6 +237,12 @@ header nav ul li a {
 		margin: 0 45px;
 	}
 
+	.contact-info div address a:hover {
+		color: black;
+		background-color: orange;
+		border-radius: 5%;
+	}
+
 .contact-info {
 	display: flex;
 	align-items: center;
@@ -215,9 +250,141 @@ header nav ul li a {
 }
 
 
+/* ------Screen Media @980 width--------- */
 
+@media screen and (max-width: 980px) {
 
+	header {
+		height: 110px;
+		flex-direction: row;
+	}
 
+	header h1 {
+		background-color: darkseagreen;
+		font-size: 35px;
+		color: black;
+		padding: 0 10px 0 10px;
+		margin: 10 10px 10px 10px;
+	}
+	header nav ul li a {
+		padding: none;
+		margin: none;
+		font-size: 20px;
+		padding: 0 13px;
+	}
+
+	.hero h2 {
+		font-size: 20px;
+	}
+
+	.section-title {
+		font-size: 25px;
+	}
+
+	.contact-info div address a {
+		font-size: 20px;
+		font-style: normal;
+		color: rgb(69, 90, 122);
+			margin: 0 10px 10px 10px;
+		}
+	}
+
+	/* ------Screen Media @768 width--------- */
+
+@media screen and (max-width: 768px) {
+	header {
+		height: 90px;
+		flex-direction: column;
+	}
+
+	header h1 {
+		font-size: 30px;
+		color: darkseagreen;
+	 margin: 10px 0;
+		background-color: transparent;
+		
+	}
+
+	header nav ul {
+		color: darkseagreen;
+		font-weight: bold;
+		margin-bottom: 10px;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header nav ul li a {
+		padding: none;
+		margin: none;
+		font-size: 15px;
+		padding: 0 13px;
+	}
+
+	.hero {
+		height: 150px;
+		margin-bottom: 20px;
+	}
+
+	.hero h2 {
+			font-size: 15px;
+			padding: 5px;
+			right: 10px;
+	}
+
+	.section-title {
+		width: 100%;
+		border-right: none;
+		margin: 0%;
+		border-bottom: 5px solid gray;
+		font-size: 25px;
+		text-align: left;		
+		overflow: auto;
+	}
+
+	.about-section {
+		height: auto;
+		margin: 0 20px;
+		align-content: left;	
+		display: inline-block;
+	}
+
+	.work-section {
+		display: flex;
+		flex-direction: column;
+		margin: 20px;
+	}
+		.work-container{
+			margin-top: 10px;
+	}
+
+	.work-item {
+		font-size: 10px;
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: wrap;
+		margin: 0 20px;
+	}
+	.contact-info div address a {
+		font-size: 20px;
+	}
+
+	.contact-info div address {
+		display: flex;
+		flex-direction: column;
+		align-items: left;
+	}
+	.myPhoto img {
+		height: 100%;
+		width: 150px;
+		background-blend-mode: soft-light;
+		position: absolute;
+		left: 0px;
+	}
+
+	}
 
 
 
