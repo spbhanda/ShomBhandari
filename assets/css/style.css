@@ -59,7 +59,7 @@ header nav ul li a:hover {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-image: url('../images/Hero_banner2.jpg');
+	background-image: url('../images/hero_background_image.JPG');
 	background-size: cover;
 	background-blend-mode: soft-light;
 	position: relative;
